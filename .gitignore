@@ -1,0 +1,58 @@
+# 本地密钥和平台 Cookie 不能提交到 Git；保留示例配置供克隆者填写。
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+backend/.env
+*.cookies.txt
+cookies.txt
+
+# 仅供本地开发维护的项目笔记与评测记录，不发布到公开仓库。
+/方案.md
+/项目交接.md
+/知识.md
+/backend/evaluation/
+
+# Python 环境、字节码和测试/类型检查缓存。
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# 前端依赖和构建产物；package-lock.json 仍应提交以固定依赖版本。
+frontend/node_modules/
+frontend/dist/
+node_modules/
+dist/
+coverage/
+
+# 本地模型体积较大，克隆后按 README 指引单独准备。
+backend/models/
+
+# 本地运行数据库、Chroma 索引与临时媒体都可重新生成。
+backend/data/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.part
+*.m4a
+*.mp3
+*.webm
+*.wav
+
+# 编辑器配置、操作系统临时文件和日志。
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

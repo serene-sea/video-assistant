@@ -1,0 +1,5 @@
+# 仅在使用 backend/models 下的本地 Sentence Transformers 模型时安装。
+-r requirements.txt
+sentence-transformers>=5.7.0,<6.0.0
+# 当前本地 Qwen 验证使用 Transformers 4.57.3，先将主版本限制在 4.x。
+transformers>=4.57.0,<5.0.0
