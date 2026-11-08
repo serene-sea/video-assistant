@@ -81,7 +81,7 @@ npm run dev
 
 打开终端显示的本地地址，通常是 `http://localhost:5173`。
 
-### 3. 配置字幕向量检索（可选）
+### 3. 配置字幕向量检索
 
 总结和 Agent 使用 Chat API。视频问答会在单独 Embedding 配置可用时检索相关字幕，并结合总结回答；Embedding 暂不可用时会退回已有总结。可以使用兼容 Embedding API，也可以准备本地 Qwen3 Embedding 模型。
 
